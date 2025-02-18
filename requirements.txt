@@ -8,5 +8,4 @@ transformers
 ray
 ipywidgets
 pyarrow
-rapidsai
-cuml
+scikit-optimize
