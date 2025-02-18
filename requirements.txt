@@ -1,0 +1,12 @@
+pandas
+nltk
+matplotlib
+seaborn
+wordcloud
+scikit-learn
+transformers
+ray
+ipywidgets
+pyarrow
+rapidsai
+cuml
