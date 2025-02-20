@@ -1,22 +1,21 @@
 from abc import ABC, abstractmethod
-from typing import TypeVar, Generic, List
+from typing import List
+from pandas import DataFrame
 
-T = TypeVar('T')
 
-
-class IRepository(ABC, Generic[T]):
+class IRepository(ABC):
     @abstractmethod
-    def get_all(self) -> (T | List[T]):
+    def get_all(self) -> DataFrame:
         pass
 
     @abstractmethod
-    def create(self, data: T) -> None:
+    def create(self, data: dict) -> None:
         pass
 
     @abstractmethod
-    def update(self, data: T) -> None:
+    def update(self, row: int, column: int, value: (str | int)) -> None:
         pass
 
     @abstractmethod
-    def delete(self) -> None:
+    def delete(self, indices: (int | List[int])) -> None:
         pass
