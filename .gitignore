@@ -3,5 +3,4 @@
 mlruns
 mlflow_tracking
 mlflow.db
-classification_report.csv
 __pycache__/
