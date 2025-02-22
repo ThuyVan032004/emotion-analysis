@@ -1,11 +1,11 @@
-from typing import TypeVar, List
+from typing import List
 from pathlib import Path
 import pandas as pd
 from pandas import DataFrame
 from .interfaces.i_repository import IRepository
 
 
-def read_file(file_path: str) -> DataFrame:
+def read_file(file_path: str):
     try:
         file_format = Path(file_path).suffix.lower()
         

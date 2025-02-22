@@ -1,0 +1,14 @@
+service: "emotion_analysis_svm.services.service:EmotionAnalysisSVM"
+description: "file: ./README.md"
+labels:
+  owner: "thuyvan"
+  stage: "production"
+include:
+  - "emotion_analysis_svm/**/*.py"
+  - "shared/**/*.py"
+  - "mlruns/**"
+models:
+  - "sklearn-svm-model:latest"
+  - "tfidf-vectorizer:latest"
+python:
+  requirements_txt: "./requirements.txt"

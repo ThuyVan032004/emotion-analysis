@@ -4,8 +4,7 @@ matplotlib
 seaborn
 wordcloud
 scikit-learn
-transformers
-ray
 ipywidgets
 pyarrow
-scikit-optimize
+mlflow
+bentoml

@@ -2,4 +2,5 @@ from shared import PreprocessBase
 
 
 class PreprocessSVM(PreprocessBase):
-    pass
+    def __init__(self):
+        super().__init__()

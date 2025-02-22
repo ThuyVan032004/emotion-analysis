@@ -5,16 +5,13 @@ from scipy.sparse import spmatrix
 
 class IPreprocess(ABC):
     @abstractmethod
-    def clean_text(self, text: str, stopwords: List[str]) -> str:
+    def clean_text(self, text, stopwords):
         pass
 
     @abstractmethod
-    def stemmer(self, text: str) -> str:
+    def stemmer(self, text):
         pass
 
-    @abstractmethod
-    def tf_idf_vectorizer(self, text: (str | object)) -> spmatrix:
-        pass
 
 
 

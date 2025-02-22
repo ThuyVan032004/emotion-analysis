@@ -5,7 +5,7 @@ from pandas import DataFrame
 
 class IRepository(ABC):
     @abstractmethod
-    def get_all(self) -> DataFrame:
+    def get_all(self):
         pass
 
     @abstractmethod

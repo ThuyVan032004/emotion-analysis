@@ -7,4 +7,4 @@ class PredictSVM(PredictBase):
         self._model = svm_model
     
     def prediction(self, test_value: spmatrix):
-        return self._modef.predict(test_value)
+        return self._model.predict(test_value)
