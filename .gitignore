@@ -1,1 +1,6 @@
 .venv
+.vscode
+mlruns
+mlflow_tracking
+mlflow.db
+__pycache__/
