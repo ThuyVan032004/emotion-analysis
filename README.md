@@ -54,7 +54,6 @@ with bentoml.SyncHTTPClient("http://localhost:3000/predict") as client:
         input_text="Everyone likes the film",
     )
 ```
-You can also use Postman Desktop to call the API
 
 * For deployment mode
 ```python
