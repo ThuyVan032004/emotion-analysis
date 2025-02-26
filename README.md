@@ -34,11 +34,34 @@ bentoml serve
 
 * For deployment mode
 
-You will need to create a [bentoml account](https://www.bentoml.com/)
-## Usage
-
-```python
-
+You will need to create a [bentoml account](https://www.bentoml.com/). Then create API token use the command
+```bash
+bentoml cloud login
 ```
+Choose "Create a new API token with a web browser"
 
-## Contributing
+After that, you can deploy the API using command
+```bash
+bentoml deploy .
+```
+## Usage
+* For development mode
+```python 
+import bentoml
+
+with bentoml.SyncHTTPClient("http://localhost:3000/predict") as client:
+    result = client.predict(
+        input_text="Everyone likes the film",
+    )
+```
+You can also use Postman Desktop to call the API
+
+* For deployment mode
+```python
+import bentoml
+
+with bentoml.SyncHTTPClient("https://<Your deployed API endpoint>") as client:
+    result = client.predict(
+        input_text="Everyone likes the film",
+    )
+```
