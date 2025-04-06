@@ -8,3 +8,4 @@ ipywidgets
 pyarrow
 mlflow
 bentoml
+scikit-optimize
